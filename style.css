@@ -1,0 +1,50 @@
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	margin: 0;
+	background-color: darkorange;
+}
+
+h1 {
+	font-family: "Rammetto One", sans-serif;
+	text-transform: uppercase;
+}
+
+.sandwich {
+	font-size: 6rem;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgb(65, 25, 0);
+	color: rgb(65, 25, 0);
+	transform: rotateX(55deg);
+	transform-style: preserve-3d;
+}
+
+.sandwich::before {
+	content: "Ice Cream Sandwich";
+	text-shadow: 1px 1px 0px white;
+	-webkit-text-stroke: 3px white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	transform: translateZ(-6px);
+}
+
+.sandwich::after {
+	content: "Ice Cream Sandwich";
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgb(65, 25, 0);
+	transform: translateZ(-10px);
+}
